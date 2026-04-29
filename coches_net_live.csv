@@ -1,66 +1,86 @@
-Car_Name,Selling_Price,Year,Kms_Driven,Fuel_Type
-TESLA Model S 100D 4WD,29.900 €,2017,97.000 km,Eléctrico
-AUDI A4 RS 4 2.9 TFSI quattro tiptro Avant,57.900 €,2018,59.500 km,Gasolina
-LAND-ROVER Defender 90 2.5 TD5 Pick Up S,53.900 €,2007,142.062 km,Diesel
-LAND-ROVER Defender 90 2.5TD5 HTOP,52.900 €,1999,266.000 km,Diesel
-LAND-ROVER Range Rover Evoque 1.5 P300e I3 SE AUTO 4WD PHEV,42.900 €,2023,31.250 km,Híbrido enchufable
-LAND-ROVER Range Rover Evoque 1.5 P300e I3 S AUTO 4WD PHEV,44.900 €,2023,17.837 km,Híbrido enchufable
-KIA Sportage 1.6 TGDi PHEV GTline 4x4,39.990 €,2023,16.546 km,Híbrido enchufable
-KIA EV6 Air 774kWh RWD Long Range,37.980 €,2023,4656 km,Eléctrico
-KIA XCeed 1.6 GDi PHEV eDrive,22.990 €,2022,11.420 km,Híbrido enchufable
-SKODA Octavia 2.0 TSI DSG RS,38.900 €,2025,6000 km,Gasolina
-CITROEN Berlingo Talla M BlueHDi 100 SS LIVE,13.000 €,2019,130.000 km,Diesel
-BMW Serie 1 118d,13.500 €,2016,100.000 km,Diesel
-AUDI A1 Sportback 25 TFSI,16.990 €,2022,59.000 km,Gasolina
-BMW X6 xDrive30d,28.500 €,2016,180.000 km,Diesel
-TOYOTA Yaris Cross 1.5 130H GR Sport,29.990 €,2025,1 km,Híbrido
-FIAT Panda 1.3 Lounge Diese E5l,10.990 €,2014,76.000 km,Diesel
-BMW Serie 3 316d,11.000 €,2014,230.000 km,Diesel
-SEAT León 1.0 TSI SS Style XL Vision,18.900 €,2024,11.652 km,Gasolina
-KIA Stonic 1.0 TGDi MHEV iMT Drive,16.900 €,2021,74.176 km,Híbrido
-MERCEDES-BENZ Clase B B 200 d,21.900 €,2018,64.073 km,Diesel
-FIAT 500 Lounge 1.0 6v GSE 70 CV,10.990 €,2020,49.000 km,Híbrido
-LAND-ROVER Range Rover Sport 3.0 TDV6 HSE Dynamic,30.000 €,2018,180.000 km,Diesel
-KIA Niro 1.6 GDi PHEV Emotion,21.490 €,2020,37.252 km,Híbrido enchufable
-NISSAN X-TRAIL 5pl 1.5 e4ORCE 4x4 AT Tekna,37.900 €,2022,5500 km,Híbrido
-JEEP Renegade Longitude 1.0G 4x2,16.990 €,2022,80.000 km,Gasolina
-HYUNDAI i20 1.0 TGDI Klass,10.890 €,2020,159.000 km,Gasolina
-OPEL Corsa 1.2T XHL Edition,10.990 €,2022,55.000 km,Gasolina
-OPEL Astra 1.4 Turbo Dynamic,12.500 €,2018,60.000 km,Gasolina
-RENAULT Captur techno TCe GPF,17.990 €,2023,50.000 km,Híbrido
-MERCEDES-BENZ Clase CLA CLA 200 d,16.500 €,2017,200.000 km,Diesel
-LAND-ROVER Range Rover Velar 3.0D D300 RDynamic HSE 4WD Auto,30.000 €,2018,20.000 km,Diesel
-LAND-ROVER Defender 3.0D I6 250 XDynamic SE 90 AT 4WD MHEV,94.900 €,2025,13.400 km,Híbrido
-LAND-ROVER Range Rover Evoque 2.0L eD4 Diesel 4x2 SE Dynamic,17.500 €,2017,130.000 km,Diesel
-MAZDA CX-3 1.5 SKYACTIV DE Luxury 2WD,14.500 €,2016,100.000 km,Diesel
-KIA e-Niro eNiro Emotion Long Range,29.900 €,2023,46.718 km,Eléctrico
-MERCEDES-BENZ Mercedes-AMG GT MercedesAMG GT 53 4MATIC,80.000 €,2020,100.000 km,Gasolina
-HYUNDAI i40 1.7 CRDi BlueDrive Klass,11.000 €,2013,85.000 km,Diesel
-FIAT Panda Panda Hybrid 1.0,9.990 €,2022,64.000 km,Híbrido
-SKODA Karoq 1.5 TSI DSG ACT Design,30.500 €,2024,16.000 km,Gasolina
-MERCEDES-BENZ Clase CLA CLA 200 CDI Urban,16.000 €,2014,130.000 km,Diesel
-KIA Sportage 1.6 CRDi MHEV Drive 4x2,27.950 €,2024,36.092 km,Híbrido
-MITSUBISHI Eclipse Cross PHEV Kaiteki 4WD,33.900 €,2025,6052 km,Híbrido enchufable
-BMW Serie 2 218d,18.990 €,2016,130.000 km,Diesel
-AUDI Q3 Sportback 35 TDI S tronic Black Lim.,48.900 €,2025,7149 km,Diesel
-MERCEDES-BENZ Clase C C 300 Estate,27.500 €,2019,156.830 km,Híbrido
-RENAULT Trafic Equilibre En Blue dCi 81kW110CV,29.990 €,2024,31.000 km,Diesel
-PEUGEOT 2008 Allure Puretech 100 SS BVM6,13.990 €,2021,55.000 km,Gasolina
-AUDI A5 Sportback 2.0 TDI S line edition,14.500 €,2013,220.000 km,Diesel
-BMW Serie 3 M3 Competition M xDrive,90.000 €,2024,25.000 km,Gasolina
-KIA Sportage 1.6 CRDi MHEV Drive 4x2,32.990 €,2025,5601 km,Híbrido
-PEUGEOT 3008 Hybrid 1.2 Allure eDCS6,31.900 €,2025,2 km,Híbrido
-VOLKSWAGEN Tiguan RLine 2.0 TDI DSG,27.990 €,2022,189.000 km,Diesel
-KIA XCeed 1.6 GDi PHEV eDrive,25.450 €,2023,15.361 km,Híbrido enchufable
-PEUGEOT E-408 E408 GT Electrico 210,34.900 €,2025,1 km,Eléctrico
-BMW Serie 4 420d Automatica,22.490 €,2015,155.000 km,Diesel
-BMW Serie 4 435dA xDrive,40.900 €,2018,115.893 km,Diesel
-CITROEN C1 VTi SS City Edition,10.900 €,2022,73.000 km,Gasolina
-BENTLEY Continental GT GT W12 Convertible,209.900 €,2019,38.300 km,Gasolina
-SKODA Karoq 1.5 TSI DSG ACT Selection,28.900 €,2025,27.999 km,Gasolina
-PEUGEOT Rifter Active Pack Standard BlueHDi,11.990 €,2021,160.000 km,Diesel
-KIA Niro 1.6 GDi HEV Drive,27.900 €,2024,23.405 km,Híbrido
-BMW Serie 4 435dA xDrive Gran Coupe,29.900 €,2018,133.780 km,Diesel
-SSANGYONG Tivoli D16T Premium 4x4,11.000 €,2015,140.000 km,Diesel
-OPEL Antara 2.2 CDTI 163 CV StartStop Selective 4X2,7.500 €,2014,170.000 km,Diesel
-FIAT 500 Lounge 1.2 8v 69 CV,9.990 €,2020,99.000 km,Gasolina
+Brand,Car_Name,Selling_Price,Year,Kms_Driven,Fuel_Type,cc,Location,Ref
+TESLA,TESLA Model S 100D 4WD,29.900 €,2017,97.000 km,Eléctrico,525 cv,Madrid,https://www.coches.net/tesla-model-s-100d-4wd-5p-electrico-hibrido-2017-en-madrid-55526134-covo.aspx
+AUDI,AUDI A4 RS 4 2.9 TFSI quattro tiptro Avant,57.900 €,2018,59.500 km,Gasolina,450 cv,Madrid,https://www.coches.net/audi-a4-rs-4-29-tfsi-331kw-quattro-tiptro-avant-5p-gasolina-2018-en-madrid-56752801-covo.aspx
+LAND-ROVER,LAND-ROVER Defender 90 2.5 TD5 Pick Up S,53.900 €,2007,142.062 km,Diesel,122 cv,Madrid,https://www.coches.net/land-rover-defender-90-25-td5-pick-up-s-2p-diesel-2007-en-madrid-57135482-covo.aspx
+LAND-ROVER,LAND-ROVER Defender 90 2.5TD5 HTOP,52.900 €,1999,266.000 km,Diesel,122 cv,Madrid,https://www.coches.net/land-rover-defender-90-25td5-htop-3p-diesel-1999-en-madrid-57512817-covo.aspx
+LAND-ROVER,LAND-ROVER Range Rover Evoque 1.5 P300e I3 SE AUTO 4WD PHEV,42.900 €,2023,31.250 km,Híbrido enchufable,309 cv,Madrid,https://www.coches.net/land-rover-range-rover-evoque-15-p300e-i3-se-auto-4wd-phev-5p-electrico-hibrido-2023-en-madrid-58266880-covo.aspx
+LAND-ROVER,LAND-ROVER Range Rover Evoque 1.5 P300e I3 S AUTO 4WD PHEV,44.900 €,2023,17.837 km,Híbrido enchufable,309 cv,Madrid,https://www.coches.net/land-rover-range-rover-evoque-15-p300e-i3-s-auto-4wd-phev-5p-electrico-hibrido-2024-en-madrid-59042469-covo.aspx
+KIA,KIA Sportage 1.6 TGDi PHEV GTline 4x4,39.990 €,2023,16.546 km,Híbrido enchufable,265 cv,Sevilla,https://www.coches.net/kia-sportage-16-tgdi-phev-198kw-265cv-gtline-4x4-5p-electrico-hibrido-2023-en-sevilla-59503770-covo.aspx
+KIA,KIA EV6 Air 774kWh RWD Long Range,37.980 €,2023,4656 km,Eléctrico,229 cv,Sevilla,https://www.coches.net/kia-ev6-air-774kwh-168kw-rwd-long-range-5p-electrico-hibrido-2023-en-sevilla-59506294-covo.aspx
+KIA,KIA XCeed 1.6 GDi PHEV eDrive,22.990 €,2022,11.420 km,Híbrido enchufable,141 cv,Sevilla,https://www.coches.net/kia-xceed-16-gdi-phev-104kw-141cv-edrive-5p-electrico-hibrido-2022-en-sevilla-59612247-covo.aspx
+KIA,KIA Sportage 1.6 TGDi HEV Tech 4x2,33.190 €,2023,14.736 km,Híbrido,230 cv,Sevilla,https://www.coches.net/kia-sportage-16-tgdi-hev-171kw-230cv-tech-4x2-5p-electrico-hibrido-2023-en-sevilla-59692825-covo.aspx
+LAND-ROVER,LAND-ROVER Range Rover Evoque 2.0 D163 SE AUTO 4WD MHEV,43.900 €,2023,15.046 km,Híbrido,163 cv,Madrid,https://www.coches.net/land-rover-range-rover-evoque-20-d163-se-auto-4wd-mhev-5p-electrico-hibrido-2023-en-madrid-59704170-covo.aspx
+SKODA,SKODA Karoq 2.0 TSI DSG 4X4 Sportline,39.900 €,2024,9100 km,Gasolina,190 cv,Gipuzkoa,https://www.coches.net/skoda-karoq-20-tsi-140kw-190cv-dsg-4x4-sportline-5p-gasolina-2024-en-guipuzcoa-59854818-covo.aspx
+BMW,BMW Serie 3 318d Auto.Touring,39.900 €,2024,26.335 km,Híbrido,150 cv,Toledo,https://www.coches.net/bmw-serie-3-318d-autotouring-5p-electrico-hibrido-2024-en-toledo-60027373-covo.aspx
+KIA,KIA Sportage 1.6 CRDi MHEV Drive 4x2,28.090 €,2023,15.419 km,Híbrido,136 cv,Sevilla,https://www.coches.net/kia-sportage-16-crdi-mhev-100kw-136cv-drive-4x2-5p-electrico-hibrido-2023-en-sevilla-60250620-covo.aspx
+KIA,KIA Niro 1.6 GDi PHEV Emotion,35.890 €,2025,16 km,Híbrido enchufable,171 cv,Sevilla,https://www.coches.net/kia-niro-16-gdi-phev-126kw-171cv-emotion-5p-electrico-hibrido-2025-en-sevilla-60415894-covo.aspx
+BMW,BMW Serie 1 118d,11.500 €,2014,200.000 km,Diesel,143 cv,Murcia,https://www.coches.net/bmw-serie-1-118d-3p-diesel-2014-en-murcia-60475140-covo.aspx
+KIA,KIA XCeed 1.0 TGDi Drive,17.000 €,2022,50.000 km,Gasolina,120 cv,Murcia,https://www.coches.net/kia-xceed-10-tgdi-drive-88kw-120cv-5p-gasolina-2023-en-murcia-60523693-covo.aspx
+BENTLEY,BENTLEY Continental Flying Spur 6.0 Speed,50.000 €,2010,130.000 km,Gasolina,610 cv,Murcia,https://www.coches.net/bentley-continental-flying-spur-60-speed-4p-gasolina-2009-en-murcia-60523913-covo.aspx
+KIA,KIA Sportage 1.6 TGDi PHEV Drive 4x4,34.890 €,2023,25.071 km,Híbrido enchufable,265 cv,Sevilla,https://www.coches.net/kia-sportage-16-tgdi-phev-198kw-265cv-drive-4x4-5p-electrico-hibrido-2023-en-sevilla-60533468-covo.aspx
+KIA,KIA Stonic 1.6 CRDi VGT Tech EcoDynam,11.000 €,2018,200.000 km,Diesel,110 cv,Murcia,https://www.coches.net/kia-stonic-16-crdi-vgt-81kw-110cv-tech-ecodynam-5p-diesel-2018-en-murcia-60642106-covo.aspx
+BMW,BMW Serie 1 118d,11.500 €,2013,175.000 km,Diesel,143 cv,Murcia,https://www.coches.net/bmw-serie-1-118d-5p-diesel-2014-en-murcia-60642191-covo.aspx
+MERCEDES-BENZ,MERCEDES-BENZ Clase C C Cabrio 220 d,30.590 €,2017,56.000 km,Diesel,170 cv,Granada,https://www.coches.net/mercedes-benz-clase-c-c-cabrio-220-d-2p-diesel-2017-en-granada-60654728-covo.aspx
+SKODA,SKODA Octavia 2.0 TSI DSG RS,38.900 €,2025,6000 km,Gasolina,265 cv,Gipuzkoa,https://www.coches.net/skoda-octavia-20-tsi-195-kw-265cv-dsg-rs-5p-gasolina-2025-en-guipuzcoa-60732095-covo.aspx
+CITROEN,CITROEN Berlingo Talla M BlueHDi 100 SS LIVE,13.000 €,2019,130.000 km,Diesel,102 cv,Murcia,https://www.coches.net/citroen-berlingo-talla-m-bluehdi-100-ss-live-4p-diesel-2020-en-murcia-60828973-covo.aspx
+BMW,BMW Serie 1 118d,13.500 €,2016,100.000 km,Diesel,150 cv,Murcia,https://www.coches.net/bmw-serie-1-118d-5p-diesel-2017-en-murcia-60829031-covo.aspx
+AUDI,AUDI A1 Sportback 25 TFSI,16.990 €,2022,59.000 km,Gasolina,95 cv,Sta. C. Tenerife,https://www.coches.net/audi-a1-sportback-25-tfsi-70kw-95cv-5p-gasolina-2022-en-sta-c-tenerife-60883573-covo.aspx
+BMW,BMW X6 xDrive30d,28.500 €,2016,180.000 km,Diesel,258 cv,Murcia,https://www.coches.net/bmw-x6-xdrive30d-5p-diesel-2017-en-murcia-60887813-covo.aspx
+TOYOTA,TOYOTA Yaris Cross 1.5 130H GR Sport,29.990 €,2025,1 km,Híbrido,130 cv,Las Palmas,https://www.coches.net/toyota-yaris-cross-15-130h-gr-sport-5p-electrico-hibrido-2024-en-las-palmas-60895313-covo.aspx
+FIAT,FIAT Panda 1.3 Lounge Diese E5l,10.990 €,2014,76.000 km,Diesel,75 cv,Las Palmas,https://www.coches.net/fiat-panda-13-lounge-75cv-diese-e5l-5p-diesel-2012-en-las-palmas-60930104-covo.aspx
+BMW,BMW Serie 3 316d,11.000 €,2014,230.000 km,Diesel,116 cv,Murcia,https://www.coches.net/bmw-serie-3-316d-4p-diesel-2015-en-murcia-60935283-covo.aspx
+SEAT,SEAT León 1.0 TSI SS Style XL Vision,18.900 €,2024,11.652 km,Gasolina,110 cv,Gipuzkoa,https://www.coches.net/seat-leon-10-tsi-81kw-ss-style-xl-vision-5p-gasolina-2024-en-guipuzcoa-60941172-covo.aspx
+KIA,KIA Stonic 1.0 TGDi MHEV iMT Drive,16.900 €,2021,74.176 km,Híbrido,120 cv,Madrid,https://www.coches.net/kia-stonic-10-tgdi-88kw-120cv-mhev-imt-drive-5p-electrico-hibrido-2021-en-madrid-61004150-covo.aspx
+MERCEDES-BENZ,MERCEDES-BENZ Clase B B 200 d,21.900 €,2018,64.073 km,Diesel,136 cv,Jaén,https://www.coches.net/mercedes-benz-clase-b-b-200-d-5p-diesel-2018-en-jaen-61012216-covo.aspx
+FIAT,FIAT 500 Lounge 1.0 6v GSE 70 CV,10.990 €,2020,49.000 km,Híbrido,70 cv,Murcia,https://www.coches.net/fiat-500-lounge-10-6v-gse-52kw-70-cv-3p-electrico-hibrido-2020-en-murcia-61013744-covo.aspx
+LAND-ROVER,LAND-ROVER Range Rover Sport 3.0 TDV6 HSE Dynamic,30.000 €,2018,180.000 km,Diesel,258 cv,Murcia,https://www.coches.net/land-rover-range-rover-sport-30-tdv6-190kw-258cv-hse-dynamic-5p-diesel-2018-en-murcia-61032591-covo.aspx
+KIA,KIA Niro 1.6 GDi PHEV Emotion,21.490 €,2020,37.252 km,Híbrido enchufable,141 cv,Huelva,https://www.coches.net/kia-niro-16-gdi-phev-104kw-141cv-emotion-5p-electrico-hibrido-2020-en-huelva-61033211-covo.aspx
+NISSAN,NISSAN X-TRAIL 5pl 1.5 e4ORCE 4x4 AT Tekna,37.900 €,2022,5500 km,Híbrido,213 cv,Jaén,https://www.coches.net/nissan-x-trail-5pl-15-e4orce-158kw-4x4-at-tekna-5p-electrico-hibrido-2023-en-jaen-61034284-covo.aspx
+JEEP,JEEP Renegade Longitude 1.0G 4x2,16.990 €,2022,80.000 km,Gasolina,120 cv,Las Palmas,https://www.coches.net/jeep-renegade-longitude-10g-88kw-120cv-4x2-5p-gasolina-2022-en-las-palmas-61038775-covo.aspx
+HYUNDAI,HYUNDAI i20 1.0 TGDI Klass,10.890 €,2020,159.000 km,Gasolina,100 cv,Murcia,https://www.coches.net/hyundai-i20-10-tgdi-74kw-100cv-klass-5p-gasolina-2019-en-murcia-61039832-covo.aspx
+OPEL,OPEL Corsa 1.2T XHL Edition,10.990 €,2022,55.000 km,Gasolina,100 cv,Sta. C. Tenerife,https://www.coches.net/opel-corsa-12t-xhl-74kw-100cv-edition-5p-gasolina-2022-en-sta-c-tenerife-61066516-covo.aspx
+OPEL,OPEL Astra 1.4 Turbo Dynamic,12.500 €,2018,60.000 km,Gasolina,125 cv,Murcia,https://www.coches.net/opel-astra-14-turbo-92kw-125cv-dynamic-5p-gasolina-2019-en-murcia-61068693-covo.aspx
+RENAULT,RENAULT Captur techno TCe GPF,17.990 €,2023,50.000 km,Híbrido,140 cv,Las Palmas,https://www.coches.net/renault-captur-techno-tce-103-kw-140cv-gpf-5p-electrico-hibrido-2022-en-las-palmas-61091225-covo.aspx
+HYUNDAI,HYUNDAI i40 1.7 CRDi BlueDrive Klass,11.000 €,2013,85.000 km,Diesel,115 cv,Murcia,https://www.coches.net/hyundai-i40-17-crdi-115cv-bluedrive-klass-4p-diesel-2014-en-murcia-61206874-covo.aspx
+FIAT,FIAT Panda Panda Hybrid 1.0,9.990 €,2022,64.000 km,Híbrido,70 cv,Sta. C. Tenerife,https://www.coches.net/fiat-panda-panda-hybrid-10-51kw-70cv-5p-electrico-hibrido-2023-en-sta-c-tenerife-61217048-covo.aspx
+SKODA,SKODA Karoq 1.5 TSI DSG ACT Design,30.500 €,2024,16.000 km,Gasolina,150 cv,Gipuzkoa,https://www.coches.net/skoda-karoq-15-tsi-110kw-150cv-dsg-act-design-5p-gasolina-2024-en-guipuzcoa-61288635-covo.aspx
+MERCEDES-BENZ,MERCEDES-BENZ Clase CLA CLA 200 CDI Urban,16.000 €,2014,130.000 km,Diesel,136 cv,Murcia,https://www.coches.net/mercedes-benz-clase-cla-cla-200-cdi-urban-4p-diesel-2015-en-murcia-61331957-covo.aspx
+KIA,KIA Sportage 1.6 CRDi MHEV Drive 4x2,27.950 €,2024,36.092 km,Híbrido,136 cv,Madrid,https://www.coches.net/kia-sportage-16-crdi-mhev-100kw-136cv-drive-4x2-5p-electrico-hibrido-2025-en-madrid-61337932-covo.aspx
+MITSUBISHI,MITSUBISHI Eclipse Cross PHEV Kaiteki 4WD,33.900 €,2025,6052 km,Híbrido enchufable,188 cv,Jaén,https://www.coches.net/mitsubishi-eclipse-cross-phev-kaiteki-4wd-5p-electrico-hibrido-2023-en-jaen-61368409-covo.aspx
+BMW,BMW Serie 2 218d,18.990 €,2016,130.000 km,Diesel,150 cv,Castellón,https://www.coches.net/bmw-serie-2-218d-2p-diesel-2016-en-castellon-61379838-covo.aspx
+AUDI,AUDI Q3 Sportback 35 TDI S tronic Black Lim.,48.900 €,2025,7149 km,Diesel,150 cv,Jaén,https://www.coches.net/audi-q3-sportback-35-tdi-110kw-150cv-s-tronic-black-lim-5p-diesel-2025-en-jaen-61380799-covo.aspx
+MERCEDES-BENZ,MERCEDES-BENZ Clase C C 300 Estate,27.500 €,2019,156.830 km,Híbrido,258 cv,A Coruña,https://www.coches.net/mercedes-benz-clase-c-c-300-estate-5p-electrico-hibrido-2019-en-a-coruna-61400901-covo.aspx
+RENAULT,RENAULT Trafic Equilibre En Blue dCi 81kW110CV,29.990 €,2024,31.000 km,Diesel,110 cv,Las Palmas,https://www.coches.net/renault-trafic-equilibre-en-blue-dci-81kw110cv-5p-diesel-2023-en-las-palmas-61410427-covo.aspx
+PEUGEOT,PEUGEOT 2008 Allure Puretech 100 SS BVM6,13.990 €,2021,55.000 km,Gasolina,100 cv,Sta. C. Tenerife,https://www.coches.net/peugeot-2008-allure-puretech-100-ss-bvm6-5p-gasolina-2020-en-sta-c-tenerife-61410457-covo.aspx
+AUDI,AUDI A5 Sportback 2.0 TDI S line edition,14.500 €,2013,220.000 km,Diesel,150 cv,Murcia,https://www.coches.net/audi-a5-sportback-20-tdi-150cv-s-line-edition-5p-diesel-2014-en-murcia-61453915-covo.aspx
+BMW,BMW Serie 3 M3 Competition M xDrive,90.000 €,2024,25.000 km,Gasolina,530 cv,Murcia,https://www.coches.net/bmw-serie-3-m3-competition-m-xdrive-4p-gasolina-2025-en-murcia-61456295-covo.aspx
+KIA,KIA Sportage 1.6 CRDi MHEV Drive 4x2,32.990 €,2025,5601 km,Híbrido,136 cv,Sevilla,https://www.coches.net/kia-sportage-16-crdi-mhev-100kw-136cv-drive-4x2-5p-electrico-hibrido-2025-en-sevilla-61473788-covo.aspx
+PEUGEOT,PEUGEOT 3008 Hybrid 1.2 Allure eDCS6,31.900 €,2025,2 km,Híbrido,145 cv,Asturias,https://www.coches.net/km-0/peugeot/3008-hybrid/asturias/12-107kw-allure-edcs6-electrico-hibrido-de-km0-61479120-kovn.aspx
+VOLKSWAGEN,VOLKSWAGEN Tiguan RLine 2.0 TDI DSG,27.990 €,2022,189.000 km,Diesel,150 cv,Murcia,https://www.coches.net/volkswagen-tiguan-rline-20-tdi-110kw-150cv-dsg-5p-diesel-2023-en-murcia-61518781-covo.aspx
+KIA,KIA XCeed 1.6 GDi PHEV eDrive,25.450 €,2023,15.361 km,Híbrido enchufable,141 cv,Sevilla,https://www.coches.net/kia-xceed-16-gdi-phev-104kw-141cv-edrive-5p-electrico-hibrido-2023-en-sevilla-61536039-covo.aspx
+PEUGEOT,PEUGEOT E-408 E408 GT Electrico 210,34.900 €,2025,1 km,Eléctrico,210 cv,Asturias,https://www.coches.net/km-0/peugeot/e-408/asturias/e408-gt-electrico-210-157kw-electrico-hibrido-de-km0-61537261-kovn.aspx
+BMW,BMW Serie 4 420d Automatica,22.490 €,2015,155.000 km,Diesel,190 cv,Castellón,https://www.coches.net/bmw-serie-4-420d-automatica-2p-diesel-2016-en-castellon-61555434-covo.aspx
+BMW,BMW Serie 4 435dA xDrive,40.900 €,2018,115.893 km,Diesel,313 cv,A Coruña,https://www.coches.net/bmw-serie-4-435da-xdrive-2p-diesel-2019-en-a-coruna-61572326-covo.aspx
+CITROEN,CITROEN C1 VTi SS City Edition,10.900 €,2022,73.000 km,Gasolina,72 cv,Las Palmas,https://www.coches.net/citroen-c1-vti-53kw-72cv-ss-city-edition-5p-gasolina-2021-en-las-palmas-61573905-covo.aspx
+PEUGEOT,PEUGEOT 508 SW Allure BlueHDi 96kW130CV SS EAT8,11.990 €,2019,190.000 km,Diesel,130 cv,Castellón,https://www.coches.net/peugeot-508-sw-allure-bluehdi-96kw130cv-ss-eat8-5p-diesel-2019-en-castellon-61660432-covo.aspx
+SEAT,SEAT León SP 1.0 TSI SS Style XL Vision,21.500 €,2024,18.000 km,Gasolina,110 cv,Gipuzkoa,https://www.coches.net/seat-leon-sp-10-tsi-81kw-ss-style-xl-vision-5p-gasolina-2024-en-guipuzcoa-61665420-covo.aspx
+BMW,BMW Serie 7 750e xDrive,91.900 €,2023,70.499 km,Híbrido enchufable,489 cv,Ciudad Real,https://www.coches.net/bmw-serie-7-750e-xdrive-4p-electrico-hibrido-2023-en-ciudad-real-61666981-covo.aspx
+OPEL,OPEL Mokka-e BEV 50kWh Ultimate,21.490 €,2021,19.990 km,Eléctrico,136 cv,Huelva,https://www.coches.net/opel-mokka-e-bev-50kwh-ultimate-5p-electrico-hibrido-2021-en-huelva-61669152-covo.aspx
+HYUNDAI,HYUNDAI i10 1.0 Klass,10.990 €,2023,72.000 km,Gasolina,67 cv,Sta. C. Tenerife,https://www.coches.net/hyundai-i10-10-klass-5p-gasolina-2023-en-sta-c-tenerife-61670463-covo.aspx
+MERCEDES-BENZ,MERCEDES-BENZ Clase GLC GLC 220 d 4MATIC AMG Line,22.500 €,2015,200.000 km,Diesel,170 cv,Murcia,https://www.coches.net/mercedes-benz-clase-glc-glc-220-d-4matic-amg-line-5p-diesel-2016-en-murcia-61677614-covo.aspx
+VOLKSWAGEN,VOLKSWAGEN Golf GTI TCR 2.0 TSI 213kW290CV DSG,27.500 €,2020,75.000 km,Gasolina,290 cv,Murcia,https://www.coches.net/volkswagen-golf-gti-tcr-20-tsi-213kw290cv-dsg-3p-gasolina-2019-en-murcia-61677703-covo.aspx
+MERCEDES-BENZ,MERCEDES-BENZ Clase C C Coupe 200,24.000 €,2017,170.000 km,Gasolina,184 cv,Murcia,https://www.coches.net/mercedes-benz-clase-c-c-coupe-200-2p-gasolina-2018-en-murcia-61677775-covo.aspx
+RENAULT,RENAULT Captur Intens Energy TCe,12.990 €,2017,88.000 km,Gasolina,90 cv,Murcia,https://www.coches.net/renault-captur-intens-energy-tce-66kw-90cv-5p-gasolina-2017-en-murcia-61682541-covo.aspx
+MERCEDES-BENZ,MERCEDES-BENZ Clase GLA GLA 220 CDI 4Matic AMG Line,17.900 €,2014,159.500 km,Diesel,170 cv,Murcia,https://www.coches.net/mercedes-benz-clase-gla-gla-220-cdi-4matic-amg-line-5p-diesel-2015-en-murcia-61716601-covo.aspx
+LAND-ROVER,LAND-ROVER Range Rover Velar 2.0 D180 HSE 4WD Auto,27.000 €,2018,90.000 km,Diesel,180 cv,Murcia,https://www.coches.net/land-rover-range-rover-velar-20-d180-132kw-180cv-hse-4wd-auto-5p-diesel-2019-en-murcia-61723324-covo.aspx
+KIA,KIA XCeed 1.6 GDi PHEV eMotion,24.990 €,2022,10.917 km,Híbrido enchufable,141 cv,Sevilla,https://www.coches.net/kia-xceed-16-gdi-phev-104kw-141cv-emotion-5p-electrico-hibrido-2022-en-sevilla-61724140-covo.aspx
+SEAT,SEAT Arona 1.0 TSI StartStop Style,18.800 €,2025,5027 km,Gasolina,115 cv,Valencia,https://www.coches.net/seat-arona-10-tsi-85kw-115cv-startstop-style-5p-gasolina-2026-en-valencia-61735008-covo.aspx
+OPEL,OPEL Insignia ST GS Line 1.5D DVH MT6,17.990 €,2021,96.854 km,Diesel,122 cv,Huelva,https://www.coches.net/opel-insignia-st-gs-line-15d-dvh-90kw-122cv-mt6-5p-diesel-2021-en-huelva-61744792-covo.aspx
+SEAT,SEAT León SP 1.5 TSI Style 25 Aniversario,22.500 €,2024,22.241 km,Gasolina,115 cv,Gipuzkoa,https://www.coches.net/seat-leon-sp-15-tsi-85kw-style-25-aniversario-5p-gasolina-2025-en-guipuzcoa-61746736-covo.aspx
+MERCEDES-BENZ,MERCEDES-BENZ Clase GLA GLA 220 d 4MATIC,19.990 €,2018,180.000 km,Diesel,177 cv,Castellón,https://www.coches.net/mercedes-benz-clase-gla-gla-220-d-4matic-5p-diesel-2018-en-castellon-61751812-covo.aspx
+RENAULT,RENAULT Espace Zen Energy dCi TT EDC,13.990 €,2016,170.000 km,Diesel,160 cv,Castellón,https://www.coches.net/renault-espace-zen-energy-dci-118kw-160cv-tt-edc-5p-diesel-2016-en-castellon-61751887-covo.aspx
+AUDI,AUDI A3 30 TFSI S tronic Sportback,17.990 €,2021,172.000 km,Gasolina,116 cv,Bizkaia,https://www.coches.net/audi-a3-30-tfsi-85kw-116cv-s-tronic-sportback-5p-gasolina-2019-en-vizcaya-61753951-covo.aspx
+AUDI,AUDI A6 RS 6 Avant TFSI quattro,85.000 €,2021,75.000 km,Gasolina,600 cv,Murcia,https://www.coches.net/audi-a6-rs-6-avant-tfsi-quattro-5p-gasolina-2022-en-murcia-61756353-covo.aspx
+MINI,MINI MINI John Cooper Works Coupe,12.000 €,2013,250.000 km,Gasolina,211 cv,Murcia,https://www.coches.net/mini-mini-john-cooper-works-coupe-2p-gasolina-2013-en-murcia-61782464-covo.aspx
+BMW,BMW iX1 eDrive20,39.900 €,2024,8500 km,Eléctrico,204 cv,Ciudad Real,https://www.coches.net/bmw-ix1-edrive20-5p-electrico-hibrido-2024-en-ciudad-real-61789590-covo.aspx
+BMW,BMW X4 M40i,30.000 €,2016,190.000 km,Gasolina,360 cv,Murcia,https://www.coches.net/bmw-x4-m40i-5p-gasolina-2017-en-murcia-61799970-covo.aspx
