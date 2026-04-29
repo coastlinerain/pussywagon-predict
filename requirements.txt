@@ -1,0 +1,7 @@
+pandas
+playwright
+playwright_stealth
+numpy
+xgboost
+scikit-learn
+joblib

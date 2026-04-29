@@ -6,9 +6,9 @@ from playwright_stealth import Stealth
 
 async def auto_scroll(page):
     print("Haciendo scroll para cargar todos los anuncios...")
-    for _ in range(5):
+    for _ in range(8):
         await page.keyboard.press("PageDown")
-        await asyncio.sleep(random.uniform(1, 1.5)) # Pausa corta entre scrolls
+        await asyncio.sleep(random.uniform(0.5, 1)) # Pausa corta entre scrolls
     await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
     await asyncio.sleep(random.uniform(2, 5))
 
@@ -29,14 +29,14 @@ async def main():
         )
         page = await context.new_page()
 
-        for i in range(1, NUM_PAGINAS + 1):
+        for i in range(102, NUM_PAGINAS + 1):
             url = f"https://www.coches.net/segunda-mano/?PriceMax=15000&pg={i}"
             print(f"\n--- Extrayendo Página {i}: {url} ---")
             
             try:
                 await page.goto(url, wait_until="load", timeout=60000)
                 
-                if i == 1:
+                if i == 102:
                     try:
                         await page.click("button#didomi-notice-agree-button", timeout=5000)
                         print("Cookies aceptadas.")
