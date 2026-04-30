@@ -38,9 +38,12 @@ precios_predichos = model.predict(X)
 # 6. Creación de la tabla de resultados
 resultados = pd.DataFrame({
     'Car_Name': df['Car_Name'],
+    'Ubicacion': df['Location'],
+    'Cv': df['cc'],
+    'Year': df['Year'],
     'Real_Price': df_proc['Selling_Price'],
     'Predicted_Price': precios_predichos,
-    'URL': df['Ref']
+    'URL': df['Ref'],
 })
 
 # Cálculo de la oportunidad
