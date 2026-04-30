@@ -3,8 +3,8 @@ import joblib
 
 # 1. Cargar el modelo y las columnas maestras
 try:
-    model = joblib.load('tasador_model.pkl')
-    model_columns = joblib.load('model_columns.pkl')
+    model = joblib.load('models/tasador_model.pkl')
+    model_columns = joblib.load('models/model_columns.pkl')
     print("✅ Modelo cargado correctamente.")
 except FileNotFoundError:
     print("❌ Error: No se encuentran 'tasador_model.pkl' o 'model_columns.pkl'.")
@@ -12,7 +12,7 @@ except FileNotFoundError:
     exit()
 
 # 2. Cargar datos nuevos del Scraper
-df = pd.read_csv('coches_net_live.csv')
+df = pd.read_csv('csv/coches_net_total.csv')
 
 df_proc = df.copy()
 
@@ -57,8 +57,8 @@ print(top_10[['Car_Name', 'Real_Price', 'Predicted_Price', 'Oportunidad_%']])
 
 # 8. Guardar resultados
 try:
-    chollos.to_excel("../excel/analisis_csv.xlsx", index=False)
+    chollos.to_excel("excel/analisis_csv.xlsx", index=False)
     print("\n✅ Análisis completo. Archivo 'analisis_csv.xlsx' generado.")
 except ImportError:
-    chollos.to_csv("analisis_nuevo.csv", index=False)
+    chollos.to_csv("excel/analisis_nuevo.csv", index=False)
     print("\n✅ Análisis completo. Archivo 'analisis_compras_real.csv' generado (Instala 'openpyxl' para Excel).")

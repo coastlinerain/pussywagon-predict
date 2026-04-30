@@ -29,14 +29,14 @@ async def main():
         )
         page = await context.new_page()
 
-        for i in range(201, NUM_PAGINAS + 1):
+        for i in range(295, NUM_PAGINAS + 1):
             url = f"https://www.coches.net/segunda-mano/?PriceMax=15000&pg={i}"
             print(f"\n--- Extrayendo Página {i}: {url} ---")
             
             try:
                 await page.goto(url, wait_until="load", timeout=60000)
                 
-                if i == 201:
+                if i == 295:
                     try:
                         await page.click("button#didomi-notice-agree-button", timeout=5000)
                         print("Cookies aceptadas.")
@@ -100,7 +100,7 @@ async def main():
         if coches_data:
             df = pd.DataFrame(coches_data)
             df = df.drop_duplicates(subset=["Car_Name", "Selling_Price", "Kms_Driven"])
-            df.to_csv("../csv/coches_net_live.csv", index=False)
+            df.to_csv("csv/coches_net_live.csv", index=False)
             print(f"\n¡Éxito! Total de ofertas ÚNICAS guardadas: {len(df)}")
             print(df.head())
         else:
