@@ -1,8 +1,8 @@
 import pandas as pd
 import joblib
 
-model = joblib.load('tasador_model.pkl')
-model_columns = joblib.load('model_columns.pkl')
+model = joblib.load('../models/tasador_model.pkl')
+model_columns = joblib.load('../models/model_columns.pkl')
 
 def tasar_coche(brand, kms, fuel, cv, location, age):
    nuevo_coche = pd.DataFrame([{

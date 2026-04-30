@@ -57,7 +57,7 @@ print(top_10[['Car_Name', 'Real_Price', 'Predicted_Price', 'Oportunidad_%']])
 
 # 8. Guardar resultados
 try:
-    chollos.to_excel("analisis_csv.xlsx", index=False)
+    chollos.to_excel("../excel/analisis_csv.xlsx", index=False)
     print("\n✅ Análisis completo. Archivo 'analisis_csv.xlsx' generado.")
 except ImportError:
     chollos.to_csv("analisis_nuevo.csv", index=False)

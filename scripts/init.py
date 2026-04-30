@@ -4,7 +4,7 @@ from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split
 
 # 1. Cargar datos
-df = pd.read_csv('coches_net_live.csv')
+df = pd.read_csv('../csv/coches_net_live.csv')
 
 df['Selling_Price'] = df['Selling_Price'].str.replace('€', '').str.replace('.', '').str.strip().astype(float)
 
@@ -49,4 +49,4 @@ print("\n--- TOP 10 MEJORES OPORTUNIDADES ---")
 top_gangas = test_results.sort_values(by='Oportunidad_%', ascending=False).head(10)
 print(top_gangas[['Car_Name', 'Real_Price', 'Predicted_Price', 'Oportunidad_%']])
 
-top_gangas.to_excel("resultados_compra.xlsx")
+top_gangas.to_excel("../excel/resultados_compra.xlsx")
