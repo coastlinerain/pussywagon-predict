@@ -13,7 +13,7 @@ async def auto_scroll(page):
     await asyncio.sleep(random.uniform(2, 5))
 
 async def main():
-    NUM_PAGINAS = 500 
+    NUM_PAGINAS = 1000 
     coches_data = []
 
     async with Stealth().use_async(async_playwright()) as p:
@@ -29,14 +29,14 @@ async def main():
         )
         page = await context.new_page()
 
-        for i in range(396, NUM_PAGINAS + 1):
+        for i in range(500, NUM_PAGINAS + 1):
             url = f"https://www.coches.net/segunda-mano/?PriceMax=15000&pg={i}"
             print(f"\n--- Extrayendo Página {i}: {url} ---")
             
             try:
                 await page.goto(url, wait_until="load", timeout=60000)
                 
-                if i == 396:
+                if i == 500:
                     try:
                         await page.click("button#didomi-notice-agree-button", timeout=5000)
                         print("Cookies aceptadas.")

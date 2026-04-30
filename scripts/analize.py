@@ -1,5 +1,6 @@
 import pandas as pd
 import joblib
+from sklearn.metrics import r2_score
 
 # 1. Cargar el modelo y las columnas maestras
 try:
@@ -7,39 +8,51 @@ try:
     model_columns = joblib.load('models/model_columns.pkl')
     print("✅ Modelo cargado correctamente.")
 except FileNotFoundError:
-    print("❌ Error: No se encuentran 'tasador_model.pkl' o 'model_columns.pkl'.")
-    print("Debes entrenar el modelo primero.")
+    print("❌ Error: No se encuentran los archivos en /models/. Entrena el modelo primero.")
     exit()
 
-# 2. Cargar datos nuevos del Scraper
-df = pd.read_csv('csv/coches_net_total.csv')
-
+# 2. Cargar datos nuevos
+df = pd.read_csv('csv/coches_net_live.csv')
 df_proc = df.copy()
 
-# Limpiamos strings a números
+# 3. Limpieza y Procesamiento
 df_proc['Selling_Price'] = df['Selling_Price'].str.replace('€', '').str.replace('.', '').str.strip().astype(float)
 df_proc['Kms_Driven'] = df['Kms_Driven'].str.replace('km', '').str.replace('.', '').str.strip().astype(int)
 df_proc['cc'] = df['cc'].str.replace('cv', '').str.strip().astype(int)
 df_proc['Age'] = 2026 - df['Year']
 
-# Extraemos la Marca (Primera palabra)
-df_proc['Brand'] = df['Brand']
+# --- logica de gammas ---
+split_name = df['Car_Name'].str.split()
+df_proc['Brand'] = split_name.str[0].str.upper()
+df_proc['Model_Base'] = split_name.str[1].str.upper()
+df_proc['Sub_Model'] = split_name.str[2].str.upper().fillna('')
+df_proc['Gama'] = (df_proc['Model_Base'] + " " + df_proc['Sub_Model']).str.strip()
 
-X = df_proc[['Brand', 'Kms_Driven', 'cc', 'Age', 'Fuel_Type', 'Location']]
+# --- VARIABLES DE CÁLCULO ---
+df_proc['Luxury_Risk'] = df_proc['cc'] * df_proc['Age']
+df_proc['Km_Per_Year'] = df_proc['Kms_Driven'] / (df_proc['Age'] + 1)
 
+# 4. Seleccionar las columnas
+features = ['Brand', 'Gama', 'Kms_Driven', 'cc', 'Age', 'Fuel_Type', 'Location', 'Luxury_Risk', 'Km_Per_Year']
+X = df_proc[features]
+
+# Convertir a dummies
 X = pd.get_dummies(X)
 
+# Alinear columnas con el entrenamiento
 X = X.reindex(columns=model_columns, fill_value=0)
 
-# 5. Predicción masiva
-print("🔮 Calculando precios justos...")
+print("🔮 Calculando precios justos con el nuevo motor de Gamas...")
 precios_predichos = model.predict(X)
 
-# 6. Creación de la tabla de resultados
 resultados = pd.DataFrame({
     'Car_Name': df['Car_Name'],
+    'Modelo': df_proc['Model_Base'],
+    'Sub-Model': df_proc['Sub_Model'],
+    'Gama': df_proc['Gama'],
+    'Kms': df_proc['Kms_Driven'],
     'Ubicacion': df['Location'],
-    'Cv': df['cc'],
+    'Cv': df_proc['cc'],
     'Year': df['Year'],
     'Real_Price': df_proc['Selling_Price'],
     'Predicted_Price': precios_predichos,
@@ -47,21 +60,28 @@ resultados = pd.DataFrame({
 })
 
 # Cálculo de la oportunidad
-# Si el precio predicho es mayor al real, es una ganga potencial
 resultados['Oportunidad_%'] = ((resultados['Predicted_Price'] - resultados['Real_Price']) / resultados['Predicted_Price']) * 100
 
-# 7. Filtrado y Formateo
+# Filtrado
 chollos = resultados.sort_values(by='Oportunidad_%', ascending=False)
 
-print("\n--- 🚀 TOP 10 MEJORES OPORTUNIDADES ENCONTRADAS ---")
-# Mostramos el Top 10 por pantalla
-top_10 = chollos.head(10)
-print(top_10[['Car_Name', 'Real_Price', 'Predicted_Price', 'Oportunidad_%']])
-
-# 8. Guardar resultados
+output_file = "excel/analisis.xlsx"
 try:
-    chollos.to_excel("excel/analisis_csv.xlsx", index=False)
-    print("\n✅ Análisis completo. Archivo 'analisis_csv.xlsx' generado.")
-except ImportError:
-    chollos.to_csv("excel/analisis_nuevo.csv", index=False)
-    print("\n✅ Análisis completo. Archivo 'analisis_compras_real.csv' generado (Instala 'openpyxl' para Excel).")
+    chollos.to_excel(output_file, index=False)
+    print(f"\n✅ Análisis completo. Archivo '{output_file}' generado.")
+except:
+    chollos.to_csv("excel/analisis.csv", index=False)
+    print("\n✅ Guardado como CSV (instala openpyxl para Excel).")
+
+# Mostrar Top 5
+print("\n🔥 TOP 5 GITANADAS!!!")
+print(chollos[['Car_Name', 'Real_Price', 'Predicted_Price', 'Oportunidad_%']].head(5))
+
+precision = r2_score(df_proc['Selling_Price'], precios_predichos)
+
+print(f"Precisión del modelo en este lote: {precision:.4f}")
+
+if precision < 0.70:
+    print("⚠️  Aviso: La precisión es baja. Los chollos encontrados podrían no ser reales.")
+elif precision > 0.95:
+    print("Precisión excelente: El modelo clava los precios de este mercado.")
