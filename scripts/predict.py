@@ -18,8 +18,7 @@ def tasar_coche(brand, kms, fuel, cv, location, age):
    prediccion = model.predict(nuevo_coche)[0]
    return prediccion
 
-# --- EJEMPLO DE USO ---
-# Imagina que ves un anuncio: 80.000km, Diesel, 150cv, Madrid, 5 años (2021)
+# ejemplo: 80.000km, Diesel, 150cv, Madrid, 5 años (2021)
 precio_estimado = tasar_coche("RENAULT", 157000, 'Diesel', 115, 'Navarra', 6)
 
 print(f"\nSegún el mercado, este coche debería costar: {precio_estimado:,.2f} €")

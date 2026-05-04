@@ -3,7 +3,6 @@ import glob
 import os
 
 def merge_car_csvs(output_filename="csv/coches_net_total.csv"):
-    # 1. Buscar todos los archivos que empiecen por 'coches_net' y terminen en .csv
     archivos = glob.glob("csv/coches_net_*.csv")
     
     if not archivos:
@@ -23,14 +22,12 @@ def merge_car_csvs(output_filename="csv/coches_net_total.csv"):
         except Exception as e:
             print(f"⚠️ Error al leer {archivo}: {e}")
 
-    # 2. Concatenar todos los DataFrames
     df_total = pd.concat(lista_df, ignore_index=True)
 
     antes = len(df_total)
     df_total.drop_duplicates(subset=['Ref'], inplace=True)
     después = len(df_total)
 
-    # 4. Guardar el resultado final
     df_total.to_csv(output_filename, index=False)
     
     print("-" * 30)

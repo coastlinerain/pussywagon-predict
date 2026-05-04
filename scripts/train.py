@@ -14,7 +14,6 @@ df['Kms_Driven'] = df['Kms_Driven'].str.replace('km', '').str.replace('.', '').s
 df['cc'] = df['cc'].str.replace('cv', '').str.strip().astype(int)
 df['Age'] = 2026 - df['Year']
 
-# --- INGENIERÍA DE VARIABLES (EL "CEREBRO" NUEVO) ---
 
 # A. Extraer Marca, Modelo y Submodelo de forma universal (casi xd)
 split_name = df['Car_Name'].str.split()
