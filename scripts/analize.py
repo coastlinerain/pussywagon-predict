@@ -12,7 +12,7 @@ except FileNotFoundError:
     exit()
 
 # 2. Cargar datos nuevos
-df = pd.read_csv('csv/coches_net_live.csv')
+df = pd.read_csv('csv/coches_net_total.csv')
 df_proc = df.copy()
 
 # 3. Limpieza y Procesamiento
