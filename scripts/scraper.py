@@ -30,14 +30,14 @@ async def main():
         )
         page = await context.new_page()
 
-        for i in range(58, NUM_PAGINAS + 1):
+        for i in range(67, NUM_PAGINAS + 1):
             url = f"https://www.coches.net/segunda-mano/?pg={i}"
             print(f"\n--- Extrayendo Página {i}: {url} ---")
             
             try:
                 await page.goto(url, wait_until="load", timeout=60000)
                 
-                if i == 58:
+                if i == 67:
                     try:
                         await page.click("button#didomi-notice-agree-button", timeout=5000)
                         print("Cookies aceptadas.")
@@ -80,7 +80,7 @@ async def main():
                             # limpiamos para que quede solo "CERO/C/ECO..."
                             etiqueta = alt_text.replace("Etiqueta ", "").split(" ")[0].upper()
                         else:
-                            etiqueta = "B" #B por defecto y a tomar por culo 
+                            etiqueta = "UNKNOWN" #por defecto y a tomar por culo 
 
                         coches_data.append({
                             "Brand": brand,

@@ -17,7 +17,7 @@ df_proc = df.copy()
 
 # 3. Limpieza y Procesamiento
 df_proc['Selling_Price'] = df['Selling_Price'].str.replace('€', '').str.replace('.', '').str.strip().astype(float)
-df['Kms_Driven'] = df['Kms_Driven'].str.replace(r'\D', '', regex=True).astype(int)
+df_proc['Kms_Driven'] = df['Kms_Driven'].str.replace(r'\D', '', regex=True).astype(int)
 df_proc['cc'] = df['cc'].str.replace('cv', '').str.strip().astype(int)
 df_proc['Age'] = 2026 - df['Year']
 
