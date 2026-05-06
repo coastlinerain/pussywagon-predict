@@ -54,6 +54,7 @@ resultados = pd.DataFrame({
     'Ubicacion': df['Location'],
     'Cv': df_proc['cc'],
     'Year': df['Year'],
+    'Fuel': df_proc['Fuel_Type'],
     'Real_Price': df_proc['Selling_Price'],
     'Predicted_Price': precios_predichos,
     'URL': df['Ref'],

@@ -3,6 +3,7 @@ import random
 import pandas as pd
 from playwright.async_api import async_playwright
 from playwright_stealth import Stealth
+from datetime import datetime
 
 async def auto_scroll(page):
     print("Haciendo scroll para cargar todos los anuncios...")
@@ -13,9 +14,9 @@ async def auto_scroll(page):
     await asyncio.sleep(random.uniform(2, 5))
 
 async def main():
-    NUM_PAGINAS = 1000 
+    NUM_PAGINAS = 1500 
     coches_data = []
-
+    fecha_actual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     async with Stealth().use_async(async_playwright()) as p:
         browser = await p.chromium.launch(
             headless=False,
@@ -29,14 +30,14 @@ async def main():
         )
         page = await context.new_page()
 
-        for i in range(913, NUM_PAGINAS + 1):
+        for i in range(1348, NUM_PAGINAS + 1):
             url = f"https://www.coches.net/segunda-mano/?PriceMax=15000&pg={i}"
             print(f"\n--- Extrayendo Página {i}: {url} ---")
             
             try:
                 await page.goto(url, wait_until="load", timeout=60000)
                 
-                if i == 913:
+                if i == 1348:
                     try:
                         await page.click("button#didomi-notice-agree-button", timeout=5000)
                         print("Cookies aceptadas.")
@@ -55,6 +56,7 @@ async def main():
                         price = await item.query_selector(".mt-CardAdPrice-cashAmount")
                         attributes = await item.query_selector_all(".mt-CardAd-attrItem")
                         link_element = await item.query_selector(".mt-CardAd-infoHeaderTitleLink")
+                        etiqueta_elem = await item.query_selector("img.sui-AtomImage-image[src*='eco-label-icons']")
                         relative_url = await link_element.get_attribute("href") if link_element else ""
 
                         full_url = f"https://www.coches.net{relative_url}" if relative_url else "N/A"
@@ -73,6 +75,13 @@ async def main():
                         else:
                             year = kms = fuel = None
 
+                        if etiqueta_elem:
+                            alt_text = await etiqueta_elem.get_attribute("alt")
+                            # limpiamos para que quede solo "CERO/C/ECO..."
+                            etiqueta = alt_text.replace("Etiqueta ", "").split(" ")[0].upper()
+                        else:
+                            etiqueta = "B" #B por defecto y a tomar por culo 
+
                         coches_data.append({
                             "Brand": brand,
                             "Car_Name": nombre,
@@ -82,6 +91,8 @@ async def main():
                             "Fuel_Type": fuel,
                             "cc": cc,
                             "Location": ubicacion,
+                            "Date Scraping": fecha_actual,
+                            "Etiqueta": etiqueta,
                             "Ref": full_url 
                         })
                     except Exception as e:
