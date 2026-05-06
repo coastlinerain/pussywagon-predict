@@ -17,7 +17,7 @@ df_proc = df.copy()
 
 # 3. Limpieza y Procesamiento
 df_proc['Selling_Price'] = df['Selling_Price'].str.replace('€', '').str.replace('.', '').str.strip().astype(float)
-df_proc['Kms_Driven'] = df['Kms_Driven'].str.replace('km', '').str.replace('.', '').str.strip().astype(int)
+df['Kms_Driven'] = df['Kms_Driven'].str.replace(r'\D', '', regex=True).astype(int)
 df_proc['cc'] = df['cc'].str.replace('cv', '').str.strip().astype(int)
 df_proc['Age'] = 2026 - df['Year']
 
@@ -33,7 +33,7 @@ df_proc['Luxury_Risk'] = df_proc['cc'] * df_proc['Age']
 df_proc['Km_Per_Year'] = df_proc['Kms_Driven'] / (df_proc['Age'] + 1)
 
 # 4. Seleccionar las columnas
-features = ['Brand', 'Gama', 'Kms_Driven', 'cc', 'Age', 'Fuel_Type', 'Location', 'Luxury_Risk', 'Km_Per_Year']
+features = ['Brand', 'Gama', 'Kms_Driven', 'cc', 'Age', 'Fuel_Type', 'Location', 'Luxury_Risk', 'Km_Per_Year', 'Etiqueta']
 X = df_proc[features]
 
 # Convertir a dummies
@@ -55,6 +55,7 @@ resultados = pd.DataFrame({
     'Cv': df_proc['cc'],
     'Year': df['Year'],
     'Fuel': df_proc['Fuel_Type'],
+    'Etiqueta': df['Etiqueta'],
     'Real_Price': df_proc['Selling_Price'],
     'Predicted_Price': precios_predichos,
     'URL': df['Ref'],

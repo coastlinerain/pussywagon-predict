@@ -10,7 +10,7 @@ df = pd.read_csv('csv/coches_net_total.csv')
 
 # --- LIMPIEZA BÁSICA ---
 df['Selling_Price'] = df['Selling_Price'].str.replace('€', '').str.replace('.', '').str.strip().astype(float)
-df['Kms_Driven'] = df['Kms_Driven'].str.replace('km', '').str.replace('.', '').str.strip().astype(int)
+df['Kms_Driven'] = df['Kms_Driven'].str.replace(r'\D', '', regex=True).astype(int)
 df['cc'] = df['cc'].str.replace('cv', '').str.strip().astype(int)
 df['Age'] = 2026 - df['Year']
 
@@ -31,11 +31,11 @@ df['Km_Per_Year'] = df['Kms_Driven'] / (df['Age'] + 1)
 
 # 2. Preparar Features
 # Eliminamos las columnas auxiliares que ya no necesitamos
-features = ['Brand', 'Gama', 'Kms_Driven', 'cc', 'Age', 'Fuel_Type', 'Location', 'Luxury_Risk', 'Km_Per_Year']
+features = ['Brand', 'Gama', 'Kms_Driven', 'cc', 'Age', 'Fuel_Type', 'Location', 'Luxury_Risk', 'Km_Per_Year', 'Etiqueta']
 X = df[features]
 
 # Convertimos a dummies
-X = pd.get_dummies(X, columns=['Brand', 'Gama', 'Fuel_Type', 'Location'], drop_first=True)
+X = pd.get_dummies(X, columns=['Brand', 'Gama', 'Fuel_Type', 'Location', 'Etiqueta'], drop_first=True)
 y = df['Selling_Price']
 
 # 3. Entrenar modelo

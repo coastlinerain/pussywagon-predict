@@ -30,14 +30,14 @@ async def main():
         )
         page = await context.new_page()
 
-        for i in range(1348, NUM_PAGINAS + 1):
-            url = f"https://www.coches.net/segunda-mano/?PriceMax=15000&pg={i}"
+        for i in range(58, NUM_PAGINAS + 1):
+            url = f"https://www.coches.net/segunda-mano/?pg={i}"
             print(f"\n--- Extrayendo Página {i}: {url} ---")
             
             try:
                 await page.goto(url, wait_until="load", timeout=60000)
                 
-                if i == 1348:
+                if i == 58:
                     try:
                         await page.click("button#didomi-notice-agree-button", timeout=5000)
                         print("Cookies aceptadas.")
